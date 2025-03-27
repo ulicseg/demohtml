@@ -1,0 +1,43 @@
+        /* Resetear estilos predeterminados */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Contenedor para la imagen y el texto */
+        .image-container {
+            position: relative;
+            width: 100%;
+            margin: 0 auto; /* Centrar el contenedor */
+        }
+
+        /* Estilo para la imagen */
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Texto superpuesto */
+        .overlay-text {
+            position: absolute;
+            top: 50%; /* Centrar verticalmente */
+            left: 50%; /* Centrar horizontalmente */
+            transform: translate(-50%, -50%); /* Ajuste preciso del centrado */
+            
+            /* Estilos de texto */
+            color: white;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .overlay-text {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
